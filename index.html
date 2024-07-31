@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>YouTube Clone</h1>
+        <nav>
+            <input type="text" id="search-bar" placeholder="Search...">
+            <button onclick="searchVideos()">Search</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="video-player">
+            <h2>Featured Video</h2>
+            <div id="video-embed">
+                <iframe id="main-video" src="https://www.youtube.com/embed/s7L2PVdrb_8" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="video-list">
+            <h2>Recommended Videos</h2>
+            <div id="videos-container">
+                <div class="video-item" onclick="playVideo('https://www.youtube.com/embed/s7L2PVdrb_8')">
+                    <img src="https://i.ytimg.com/vi/s7L2PVdrb_8/hqdefault.jpg" alt="Example Video">
+                    <p>Example Video</p>
+                </div>
+                <!-- Add more video items here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 YouTube Clone. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
